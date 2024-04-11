@@ -8,7 +8,9 @@ uk['male'] = uk['male'] / -1000
 uk['female'] = uk['female'] / 1000
 
 
-large = 22; med = 16; small = 12
+large = 22;
+med = 16;
+small = 12
 params = {'axes.titlesize': large,
           'legend.fontsize': med,
           'figure.figsize': (16, 10),
@@ -31,6 +33,8 @@ plt.rcParams["figure.figsize"] = (15, 8)
 
 ax1 = sns.barplot(x='male', y='age', data=uk, order=ages, palette="Blues")
 ax2 = sns.barplot(x='female', y='age', data=uk, order=ages, palette="Greens")
+
+# Set title and labels
 plt.title("Population pyramid for the UK, 2020 estimates")
 plt.xticks(ticks=[-2000, -1000, 0, 1000, 2000],
            labels=['2,000k', '1,000k', '0', '1,000k', '2,000k'])
